@@ -2,134 +2,145 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thirughanamuthuselvan</title>
-    <link rel="stylesheet" href="style.css">
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thirughanamuthuselvan</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
 
-
-    <nav class=" bg-primary navbar navbar-expand-lg bg-body-tertiary sticky-top container-fluid">
-        <div class="container-fluid">
-          <a class="navbar-brand text-primary fs-5 fw-bolder" href="#" style="letter-spacing: 1px;">Thirughanamuthuselvan</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Go
-                </a>
-                <ul class="dropdown-menu ">
-                  <li><a class="dropdown-item" href="#home">Home</a></li>
-                  <li><a class="dropdown-item" href="#contact">Contact</a></li>
-                </ul>
-              </li>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top shadow">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold text-light" href="#">Thirughanamuthuselvan</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Go</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#home">Home</a></li>
+              <li><a class="dropdown-item" href="#contact">Contact</a></li>
             </ul>
-            <form class="d-flex">
-              <a href="Thirughanamuthuselvan_Resume.pdf" class="btn btn-success" type="submit"><i class="bi bi-download"></i>Resume</a>
-            </form>
-          </div>
-        </div>
-      </nav>
+          </li>
+        </ul>
+        <a href="Thirughanamuthuselvan_Resume.pdf" class="btn btn-outline-success">Download Resume</a>
+      </div>
+    </div>
+  </nav>
 
-    <main class="container">
-        <span  id="home"></span>
-        <div class="card w-100" style="width: 18rem; margin-block: 20px;">
-            <div class="card-body">
-              <h5 class="card-title">Hello World!</h5>
-              <h6 class="card-subtitle mb-2 text-body-secondary">I am Thirughanamuthuselvan..</h6>
-              <p class="card-text">Software Developer | ..</p>
-            </div>
-          </div>
-        
+  <!-- Main Content -->
+  <main class="container my-5">
+     <div class="text-center mb-4">
+      <img src="Thiru_Photo.jpg" alt="Thirughanamuthuselvan Photo" class="rounded-circle shadow"
+        style="width: 150px; height: 150px; object-fit: cover;">
+    </div>
 
-          <div class="card" id="objective" >
-            <div class="card-header">
-                <i class="fa-solid fa-bullseye"></i> 
-                Objective
-            </div>
-            <div class="card-body">
-              <p class="card-text">Highly motivated and results-driven software developer with a strong proficiency in <b style="color: red;">Java programming</b></p>
-            </div>
-          </div>
+    <!-- Greeting Card -->
+    <div class="card shadow-sm border-0 mb-4">
+      <div class="card-body">
+        <h5 class="card-title text-primary fw-bold">Hello World!</h5>
+        <h6 class="card-subtitle mb-2 text-muted">I am Thirughanamuthuselvan</h6>
+        <p class="card-text">Software Developer | .NET | Java | Azure Enthusiast</p>
+      </div>
+    </div>
 
-          <div class="card" id="experience" style="margin-block: 20px;">
-            <div class="card-header">
-                <i class="fa-solid fa-briefcase"></i>
-                Work Experience
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Software Developer Intern at Zoho Corporation</h5>
-              <p class="text-body-secondary fs-">Oct 2022-May 2023</p>
-                    <p>* Developed Product project using Java programming language.</p>
-                    <p>* Supported development, QA and user experience staff to develop new products.</p>
-                    <p>* Contributed to deployments by resolving issues for optimal results.</p>
-                    <p>* Worked with developers to identify and remove software bugs.</p>
-            </div>
-          </div>
+    <!-- Objective -->
+    <div class="card shadow-sm border-0 mb-4" id="objective">
+      <div class="card-header bg-primary text-white fw-bold">
+        <i class="fa-solid fa-bullseye me-2"></i> Objective
+      </div>
+      <div class="card-body">
+        <p class="card-text">
+          Highly motivated and results-driven software developer with strong proficiency in
+          <b class="text-danger">.NET</b> and <b class="text-danger">Java</b>.
+        </p>
+      </div>
+    </div>
 
-          <div class="card" id="skills" style="margin-block: 20px;">
-            <div class="card-header">
-                <i class="fa fa-fire"></i>
-                Skills
-            </div>
-            <div class="card-body">
-              <i class="fa-brands fa-java "><span class="ps-3">jAVA</span></i> <br>
-              <i class="fa-solid fa-database "><span class="ps-3">SQL</span></i> <br>
-              <i class="fa-solid fa-c  "><span class="ps-3">C</span></i> <br>
-              <i class="fa-brands fa-git-alt "><span class="ps-3">Git</span></i> <br>
+    <!-- Work Experience -->
+    <div class="card shadow-sm border-0 mb-4" id="experience">
+      <div class="card-header bg-primary text-white fw-bold">
+        <i class="fa-solid fa-briefcase me-2"></i> Work Experience
+      </div>
 
-            </div>
-          </div>
+      <div class="card-body">
+        <h5 class="card-title fw-bold text-primary">Software Engineer at Kaar Infotech Private Ltd</h5>
+        <p class="text-muted mb-1"><span class="badge bg-success">Full-Time</span> Jan 2024 - Present</p>
+        <ul class="mb-0">
+          <li>Built and maintained high-quality applications using Microsoft technologies.</li>
+          <li>Developed ASP.NET Core apps, .NET console apps, and Web APIs focused on reliability and performance.</li>
+          <li>Used Azure App Service, Key Vault, Application Insights, Azure SQL, and Cosmos DB for cloud-native development.</li>
+        </ul>
+      </div>
 
-          <div class="card text-center mb-5" id="contact">
-            <div class="card-header">
-                <i class="fa-regular fa-id-badge"></i>
-                Contact Information
-            </div>
-            <div class="card-body">
-              <h5 class="card-title"><p><b>Know more about me <i class="fa-regular fa-face-laugh-wink"></i></b></p></h5>
-              <a href="Thirughanamuthuselvan_Resume.pdf" class="btn btn-primary">View resume</a>
-            </div>
-            <address>
-                <i class="fa-regular fa-envelope"></i> thirughanam31502@gmail.com<br>
-                <i class="fa-solid fa-phone"></i> +91 7603921114<br>
-                <div class="container flex font-center p-3">
-                    <a class=" btn btn-sm btn-outline-dark " href="https://www.linkedin.com/in/thirughanamuthuselvan-s-981a7a219/"><i
-                        class="fa-brands fa-linkedin "></i> LinkedIn</a>
-                    <a class="btn btn-outline-dark btn-sm text-decoration-none" href="https://github.com/Thirughanamuthuselvan/"><i class="fa-brands fa-square-github"></i> GitHub</a><br>
-                </div>
-                
-            </address>
-          </div>
+      <hr class="mx-3">
 
-    </main>
+      <div class="card-body">
+        <h5 class="card-title fw-bold text-primary">Software Developer Intern at Zoho Corporation</h5>
+        <p class="text-muted mb-1"><span class="badge bg-info">Internship</span> Oct 2022 - May 2023</p>
+        <ul class="mb-0">
+          <li>Built a product-based application using Java with focus on functionality and performance.</li>
+          <li>Resolved deployment issues to ensure smooth delivery.</li>
+          <li>Collaborated with developers to identify and fix software bugs.</li>
+        </ul>
+      </div>
+    </div>
 
-    <footer class=" container flex text-center">
-        <p>&copy; 2023 Tms</p>
-    </footer>
+    <!-- Skills -->
+    <div class="card shadow-sm border-0 mb-4" id="skills">
+      <div class="card-header bg-primary text-white fw-bold">
+        <i class="fa fa-fire me-2"></i> Skills
+      </div>
+      <div class="card-body">
+        <span class="badge bg-secondary me-2 mb-2">C#</span>
+        <span class="badge bg-secondary me-2 mb-2">.NET Core</span>
+        <span class="badge bg-secondary me-2 mb-2">Java</span>
+        <span class="badge bg-secondary me-2 mb-2">PostgreSQL</span>
+        <span class="badge bg-secondary me-2 mb-2">MSSQL</span>
+        <span class="badge bg-secondary me-2 mb-2">HTML/CSS</span>
+      </div>
+    </div>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
+    <!-- Contact -->
+    <div class="card shadow-sm border-0 mb-5 text-center" id="contact">
+      <div class="card-header bg-primary text-white fw-bold">
+        <i class="fa-regular fa-id-badge me-2"></i> Contact Information
+      </div>
+      <div class="card-body">
+        <h5 class="card-title mb-3"><strong>Let's connect! <i class="fa-regular fa-face-laugh-wink"></i></strong></h5>
+        <a href="Thirughanamuthuselvan_Resume.pdf" class="btn btn-outline-primary mb-3">View Resume</a>
+        <address class="mb-3">
+          <p><i class="fa-regular fa-envelope me-2"></i>thirughanam31502@gmail.com</p>
+          <p><i class="fa-solid fa-phone me-2"></i>+91 7603921114</p>
+        </address>
+        <a class="btn btn-outline-dark btn-sm me-2" href="https://www.linkedin.com/in/thirughanamuthuselvan-s-981a7a219/">
+          <i class="fa-brands fa-linkedin"></i> LinkedIn
+        </a>
+        <a class="btn btn-outline-dark btn-sm" href="https://github.com/Thirughanamuthuselvan/">
+          <i class="fa-brands fa-github"></i> GitHub
+        </a>
+      </div>
+    </div>
+  </main>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Footer -->
+  <footer class="bg-light text-center py-3 shadow-sm">
+    <p class="mb-0 text-muted">&copy; 2023 Thirughanamuthuselvan (TMS)</p>
+  </footer>
+
 </body>
 
 </html>
