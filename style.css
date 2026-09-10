@@ -1,3 +1,1446 @@
-.card{
-    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.144);
+/* =================================
+   ROOT
+================================= */
+
+:root {
+
+    --bg: #0b0b0d;
+
+    --surface: #121216;
+
+    --surface-light: #19191f;
+
+    --text: #f5f5f7;
+
+    --muted: #92929a;
+
+    --border: #26262e;
+
+    --accent: #a3ff12;
+
+}
+
+
+/* =================================
+   RESET
+================================= */
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+
+body {
+
+    background: var(--bg);
+
+    color: var(--text);
+
+    font-family: "DM Sans", sans-serif;
+
+    overflow-x: hidden;
+
+}
+
+
+a {
+
+    color: inherit;
+
+    text-decoration: none;
+
+}
+
+
+/* =================================
+   NAVBAR
+================================= */
+
+.navbar {
+
+    position: fixed;
+
+    top: 0;
+
+    width: 100%;
+
+    height: 80px;
+
+    padding: 0 7%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    z-index: 1000;
+
+    background:
+
+        rgba(11, 11, 13, 0.85);
+
+    backdrop-filter:
+
+        blur(12px);
+
+    border-bottom:
+
+        1px solid var(--border);
+
+}
+
+
+.logo {
+
+    font-family:
+
+        "Space Grotesk";
+
+    font-size: 1.5rem;
+
+    font-weight: 700;
+
+}
+
+
+.logo span {
+
+    color: var(--accent);
+
+}
+
+
+.nav-links {
+
+    display: flex;
+
+    gap: 35px;
+
+}
+
+
+.nav-links a {
+
+    color: var(--muted);
+
+    font-size: 0.9rem;
+
+    transition: 0.3s;
+
+}
+
+
+.nav-links a:hover {
+
+    color: var(--text);
+
+}
+
+
+.resume-btn {
+
+    padding: 10px 16px;
+
+    border:
+
+        1px solid var(--border);
+
+    border-radius: 8px;
+
+    font-size: 0.85rem;
+
+    transition: 0.3s;
+
+}
+
+
+.resume-btn:hover {
+
+    background: var(--surface-light);
+
+}
+
+
+/* =================================
+   HERO
+================================= */
+
+.hero {
+
+    min-height: 100vh;
+
+    padding:
+
+        140px 10%
+
+        100px;
+
+    display: grid;
+
+    grid-template-columns:
+
+        1.2fr 0.8fr;
+
+    align-items: center;
+
+    gap: 80px;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+.glow {
+
+    position: absolute;
+
+    width: 500px;
+
+    height: 500px;
+
+    border-radius: 50%;
+
+    filter: blur(150px);
+
+    opacity: 0.12;
+
+}
+
+
+.glow-one {
+
+    background: #8b5cf6;
+
+    top: -200px;
+
+    right: -100px;
+
+}
+
+
+.glow-two {
+
+    background: #00ffcc;
+
+    bottom: -300px;
+
+    left: -100px;
+
+}
+
+
+.hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+.availability {
+
+    color: var(--muted);
+
+    font-size: 0.85rem;
+
+    margin-bottom: 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+}
+
+
+.availability span {
+
+    width: 8px;
+
+    height: 8px;
+
+    background: var(--accent);
+
+    border-radius: 50%;
+
+}
+
+
+.hero h1 {
+
+    font-family:
+
+        "Space Grotesk";
+
+    font-size:
+
+        clamp(
+
+            3.2rem,
+
+            7vw,
+
+            6.5rem
+
+        );
+
+    line-height: 1;
+
+    letter-spacing: -3px;
+
+}
+
+
+.hero h1 span {
+
+    color: #8c8c96;
+
+}
+
+
+.hero-description {
+
+    max-width: 580px;
+
+    color: var(--muted);
+
+    margin-top: 30px;
+
+    font-size: 1.05rem;
+
+    line-height: 1.8;
+
+}
+
+
+.hero-actions {
+
+    margin-top: 35px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+
+}
+
+
+.primary-btn {
+
+    background: var(--accent);
+
+    color: #000;
+
+    padding: 14px 20px;
+
+    border-radius: 8px;
+
+    font-weight: 600;
+
+}
+
+
+.primary-btn i {
+
+    margin-left: 10px;
+
+}
+
+
+.text-btn {
+
+    color: var(--text);
+
+}
+
+
+.text-btn i {
+
+    margin-left: 8px;
+
+}
+
+
+.tech-strip {
+
+    margin-top: 70px;
+
+    display: flex;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.tech-strip span {
+
+    color: var(--muted);
+
+    font-size: 0.8rem;
+
+}
+
+
+.tech-strip span::after {
+
+    content: "•";
+
+    margin-left: 20px;
+
+    color: #444;
+
+}
+
+
+.tech-strip span:last-child::after {
+
+    display: none;
+
+}
+
+
+/* =================================
+   HERO IMAGE
+================================= */
+
+.hero-visual {
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+}
+
+
+.hero-visual img {
+
+    width: 320px;
+
+    height: 420px;
+
+    object-fit: cover;
+
+    border-radius:
+
+        160px 160px
+
+        25px 25px;
+
+    position: relative;
+
+    z-index: 2;
+
+    filter:
+
+        grayscale(20%);
+
+}
+
+
+.image-ring {
+
+    position: absolute;
+
+    width: 340px;
+
+    height: 440px;
+
+    border:
+
+        1px solid
+
+        rgba(
+
+            163,
+
+            255,
+
+            18,
+
+            0.3
+
+        );
+
+    border-radius:
+
+        170px 170px
+
+        25px 25px;
+
+    transform:
+
+        rotate(8deg);
+
+}
+
+
+.floating-card {
+
+    position: absolute;
+
+    z-index: 5;
+
+    bottom: 40px;
+
+    left: 0;
+
+    padding: 15px 18px;
+
+    background:
+
+        rgba(
+
+            25,
+
+            25,
+
+            31,
+
+            0.9
+
+        );
+
+    border:
+
+        1px solid var(--border);
+
+    border-radius: 10px;
+
+    display: flex;
+
+    gap: 12px;
+
+    align-items: center;
+
+}
+
+
+.floating-card i {
+
+    color: var(--accent);
+
+}
+
+
+.floating-card strong {
+
+    display: block;
+
+    font-size: 0.85rem;
+
+}
+
+
+.floating-card small {
+
+    color: var(--muted);
+
+}
+
+
+/* =================================
+   WORK
+================================= */
+
+.work-section {
+
+    padding:
+
+        130px 10%;
+
+    border-top:
+
+        1px solid var(--border);
+
+}
+
+
+.section-intro {
+
+    max-width: 700px;
+
+    margin-bottom: 70px;
+
+}
+
+
+.section-intro span {
+
+    font-size: 0.75rem;
+
+    color: var(--accent);
+
+    letter-spacing: 2px;
+
+}
+
+
+.section-intro h2 {
+
+    font-family:
+
+        "Space Grotesk";
+
+    font-size:
+
+        clamp(
+
+            2.5rem,
+
+            5vw,
+
+            4rem
+
+        );
+
+    margin-top: 20px;
+
+    letter-spacing: -2px;
+
+}
+
+
+.section-intro p {
+
+    color: var(--muted);
+
+    margin-top: 20px;
+
+}
+
+
+/* =================================
+   PROJECTS
+================================= */
+
+.projects {
+
+    display: grid;
+
+    grid-template-columns:
+
+        repeat(
+
+            2,
+
+            1fr
+
+        );
+
+    gap: 20px;
+
+}
+
+
+.project {
+
+    min-height: 380px;
+
+    padding: 40px;
+
+    background: var(--surface);
+
+    border:
+
+        1px solid var(--border);
+
+    border-radius: 16px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    transition: 0.4s;
+
+}
+
+
+.project:hover {
+
+    transform:
+
+        translateY(-8px);
+
+    background: var(--surface-light);
+
+}
+
+
+.project-large {
+
+    grid-column:
+
+        span 2;
+
+    min-height: 430px;
+
+}
+
+
+.project-number {
+
+    color: #555;
+
+    font-family:
+
+        "Space Grotesk";
+
+}
+
+
+.project-content {
+
+    position: absolute;
+
+    bottom: 40px;
+
+    max-width: 600px;
+
+}
+
+
+.project-category {
+
+    color: var(--accent);
+
+    font-size: 0.7rem;
+
+    letter-spacing: 1px;
+
+}
+
+
+.project h3 {
+
+    font-family:
+
+        "Space Grotesk";
+
+    font-size: 2rem;
+
+    margin:
+
+        12px 0;
+
+}
+
+
+.project p {
+
+    color: var(--muted);
+
+    line-height: 1.7;
+
+}
+
+
+.project-tags {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 20px;
+
+}
+
+
+.project-tags span {
+
+    padding: 6px 10px;
+
+    border:
+
+        1px solid var(--border);
+
+    border-radius: 5px;
+
+    color: #bbb;
+
+    font-size: 0.75rem;
+
+}
+
+
+.project-symbol {
+
+    position: absolute;
+
+    right: 40px;
+
+    top: 40px;
+
+    font-size: 5rem;
+
+    color:
+
+        rgba(
+
+            255,
+
+            255,
+
+            255,
+
+            0.05
+
+        );
+
+}
+
+
+/* =================================
+   ABOUT
+================================= */
+
+.about-section {
+
+    padding:
+
+        140px 10%;
+
+    display: grid;
+
+    grid-template-columns:
+
+        0.3fr 1.7fr;
+
+    gap: 80px;
+
+}
+
+
+.about-label {
+
+    font-size: 0.75rem;
+
+    letter-spacing: 2px;
+
+    color: var(--accent);
+
+}
+
+
+.about-content {
+
+    display: grid;
+
+    grid-template-columns:
+
+        1.2fr 0.8fr;
+
+    gap: 70px;
+
+}
+
+
+.about-content h2 {
+
+    font-family:
+
+        "Space Grotesk";
+
+    font-size:
+
+        clamp(
+
+            2.5rem,
+
+            5vw,
+
+            4.5rem
+
+        );
+
+    line-height: 1.1;
+
+    letter-spacing: -2px;
+
+}
+
+
+.about-content h2 span {
+
+    color: #777;
+
+}
+
+
+.about-text {
+
+    color: var(--muted);
+
+}
+
+
+.about-text p {
+
+    margin-bottom: 20px;
+
+}
+
+
+.about-text a {
+
+    display: inline-block;
+
+    margin-top: 10px;
+
+    color: var(--accent);
+
+}
+
+
+/* =================================
+   EXPERIENCE
+================================= */
+
+.experience-section {
+
+    padding:
+
+        100px 10%;
+
+    background: var(--surface);
+
+}
+
+
+.section-small-title {
+
+    color: var(--accent);
+
+    font-size: 0.75rem;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 40px;
+
+}
+
+
+.experience-list {
+
+    border-top:
+
+        1px solid var(--border);
+
+}
+
+
+.experience-row {
+
+    display: grid;
+
+    grid-template-columns:
+
+        1fr 1fr 1fr;
+
+    padding: 30px 0;
+
+    border-bottom:
+
+        1px solid var(--border);
+
+    transition: 0.3s;
+
+}
+
+
+.experience-row:hover {
+
+    padding-left: 15px;
+
+}
+
+
+.company {
+
+    font-weight: 600;
+
+    font-size: 1.1rem;
+
+}
+
+
+.role,
+
+.year {
+
+    color: var(--muted);
+
+}
+
+
+/* =================================
+   STACK
+================================= */
+
+.stack-section {
+
+    padding:
+
+        120px 10%;
+
+}
+
+
+.stack-section > span {
+
+    color: var(--accent);
+
+    font-size: 0.75rem;
+
+    letter-spacing: 2px;
+
+}
+
+
+.stack-list {
+
+    margin-top: 50px;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+}
+
+
+.stack-list div {
+
+    font-family:
+
+        "Space Grotesk";
+
+    font-size:
+
+        clamp(
+
+            1.5rem,
+
+            3vw,
+
+            2.5rem
+
+        );
+
+    color: #555;
+
+    padding:
+
+        10px 15px;
+
+    transition: 0.3s;
+
+}
+
+
+.stack-list div:hover {
+
+    color: var(--text);
+
+}
+
+
+/* =================================
+   CONTACT
+================================= */
+
+.contact-section {
+
+    padding:
+
+        150px 10%;
+
+    text-align: center;
+
+    border-top:
+
+        1px solid var(--border);
+
+}
+
+
+.contact-section > span {
+
+    color: var(--accent);
+
+    font-size: 0.75rem;
+
+    letter-spacing: 2px;
+
+}
+
+
+.contact-section h2 {
+
+    font-family:
+
+        "Space Grotesk";
+
+    font-size:
+
+        clamp(
+
+            3rem,
+
+            6vw,
+
+            6rem
+
+        );
+
+    line-height: 1;
+
+    letter-spacing: -3px;
+
+    margin: 30px 0;
+
+}
+
+
+.contact-section h2 span {
+
+    color: #777;
+
+}
+
+
+.email {
+
+    display: inline-block;
+
+    font-size:
+
+        clamp(
+
+            1.2rem,
+
+            3vw,
+
+            2rem
+
+        );
+
+    color: var(--accent);
+
+    border-bottom:
+
+        1px solid var(--accent);
+
+    padding-bottom: 5px;
+
+}
+
+
+.contact-socials {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    margin-top: 50px;
+
+}
+
+
+.contact-socials a {
+
+    color: var(--muted);
+
+}
+
+
+.contact-socials a:hover {
+
+    color: var(--text);
+
+}
+
+
+/* =================================
+   FOOTER
+================================= */
+
+footer {
+
+    padding:
+
+        25px 10%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    color: #555;
+
+    font-size: 0.8rem;
+
+    border-top:
+
+        1px solid var(--border);
+
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 900px) {
+
+
+    .nav-links {
+
+        display: none;
+
+    }
+
+
+    .hero {
+
+        grid-template-columns:
+
+            1fr;
+
+        text-align: center;
+
+        padding-top: 130px;
+
+    }
+
+
+    .hero-description {
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+    }
+
+
+    .availability {
+
+        justify-content: center;
+
+    }
+
+
+    .hero-actions {
+
+        justify-content: center;
+
+    }
+
+
+    .tech-strip {
+
+        justify-content: center;
+
+    }
+
+
+    .hero-visual {
+
+        margin-top: 30px;
+
+    }
+
+
+    .projects {
+
+        grid-template-columns:
+
+            1fr;
+
+    }
+
+
+    .project-large {
+
+        grid-column:
+
+            span 1;
+
+    }
+
+
+    .about-section {
+
+        grid-template-columns:
+
+            1fr;
+
+        gap: 30px;
+
+    }
+
+
+    .about-content {
+
+        grid-template-columns:
+
+            1fr;
+
+        gap: 40px;
+
+    }
+
+
+}
+
+
+@media (max-width: 600px) {
+
+
+    .navbar {
+
+        padding:
+
+            0 6%;
+
+    }
+
+
+    .resume-btn {
+
+        padding:
+
+            8px 12px;
+
+    }
+
+
+    .hero {
+
+        padding-left: 6%;
+
+        padding-right: 6%;
+
+    }
+
+
+    .hero h1 {
+
+        letter-spacing: -2px;
+
+    }
+
+
+    .hero-visual img {
+
+        width: 240px;
+
+        height: 320px;
+
+    }
+
+
+    .image-ring {
+
+        width: 255px;
+
+        height: 335px;
+
+    }
+
+
+    .floating-card {
+
+        left: 10px;
+
+    }
+
+
+    .work-section,
+
+    .about-section,
+
+    .experience-section,
+
+    .stack-section,
+
+    .contact-section {
+
+        padding-left: 6%;
+
+        padding-right: 6%;
+
+    }
+
+
+    .project {
+
+        min-height: 400px;
+
+        padding: 30px;
+
+    }
+
+
+    .project-symbol {
+
+        font-size: 4rem;
+
+        right: 25px;
+
+        top: 25px;
+
+    }
+
+
+    .experience-row {
+
+        grid-template-columns:
+
+            1fr;
+
+        gap: 8px;
+
+    }
+
+
+    footer {
+
+        padding:
+
+            20px 6%;
+
+        flex-direction: column;
+
+        gap: 8px;
+
+    }
+
+
 }
