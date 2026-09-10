@@ -2,144 +2,696 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Thirughanamuthuselvan</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Thirughanamuthuselvan - AI-Integrated .NET Software Engineer">
+    <title>Thirughanamuthuselvan | Software Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
-
 <body>
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top shadow">
-    <div class="container-fluid">
-      <a class="navbar-brand fw-bold text-light" href="#">Thirughanamuthuselvan</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarScroll">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Home</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Go</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#home">Home</a></li>
-              <li><a class="dropdown-item" href="#contact">Contact</a></li>
-            </ul>
-          </li>
-        </ul>
-        <a href="Thirughanamuthuselvan_Resume.pdf" class="btn btn-outline-success">Download Resume</a>
-      </div>
-    </div>
-  </nav>
+    <nav class="navbar">
 
-  <!-- Main Content -->
-  <main class="container my-5">
-     <div class="text-center mb-4">
-      <img src="Thiru_Photo.jpg" alt="Thirughanamuthuselvan Photo" class="rounded-circle shadow"
-        style="width: 150px; height: 150px; object-fit: cover;">
-    </div>
+        <a href="#home" class="logo">
 
-    <!-- Greeting Card -->
-    <div class="card shadow-sm border-0 mb-4">
-      <div class="card-body">
-        <h5 class="card-title text-primary fw-bold">Hello World!</h5>
-        <h6 class="card-subtitle mb-2 text-muted">I am Thirughanamuthuselvan</h6>
-        <p class="card-text">Software Developer | .NET | Java | Azure Enthusiast</p>
-      </div>
-    </div>
+            T<span>.</span>
 
-    <!-- Objective -->
-    <div class="card shadow-sm border-0 mb-4" id="objective">
-      <div class="card-header bg-primary text-white fw-bold">
-        <i class="fa-solid fa-bullseye me-2"></i> Objective
-      </div>
-      <div class="card-body">
-        <p class="card-text">
-          Highly motivated and results-driven software developer with strong proficiency in
-          <b class="text-danger">.NET</b> and <b class="text-danger">Java</b>.
-        </p>
-      </div>
-    </div>
-
-    <!-- Work Experience -->
-    <div class="card shadow-sm border-0 mb-4" id="experience">
-      <div class="card-header bg-primary text-white fw-bold">
-        <i class="fa-solid fa-briefcase me-2"></i> Work Experience
-      </div>
-
-      <div class="card-body">
-        <h5 class="card-title fw-bold text-primary">Software Engineer at Kaar Infotech Private Ltd</h5>
-        <p class="text-muted mb-1"><span class="badge bg-success">Full-Time</span> Jan 2024 - Present</p>
-        <ul class="mb-0">
-          <li>Built and maintained high-quality applications using Microsoft technologies.</li>
-          <li>Developed ASP.NET Core apps, .NET console apps, and Web APIs focused on reliability and performance.</li>
-          <li>Used Azure App Service, Key Vault, Application Insights, Azure SQL, and Cosmos DB for cloud-native development.</li>
-        </ul>
-      </div>
-
-      <hr class="mx-3">
-
-      <div class="card-body">
-        <h5 class="card-title fw-bold text-primary">Software Developer Intern at Zoho Corporation</h5>
-        <p class="text-muted mb-1"><span class="badge bg-info">Internship</span> Oct 2022 - May 2023</p>
-        <ul class="mb-0">
-          <li>Built a product-based application using Java with focus on functionality and performance.</li>
-          <li>Resolved deployment issues to ensure smooth delivery.</li>
-          <li>Collaborated with developers to identify and fix software bugs.</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Skills -->
-    <div class="card shadow-sm border-0 mb-4" id="skills">
-      <div class="card-header bg-primary text-white fw-bold">
-        <i class="fa fa-fire me-2"></i> Skills
-      </div>
-      <div class="card-body">
-        <span class="badge bg-secondary me-2 mb-2">C#</span>
-        <span class="badge bg-secondary me-2 mb-2">.NET Core</span>
-        <span class="badge bg-secondary me-2 mb-2">Java</span>
-        <span class="badge bg-secondary me-2 mb-2">PostgreSQL</span>
-        <span class="badge bg-secondary me-2 mb-2">MSSQL</span>
-        <span class="badge bg-secondary me-2 mb-2">HTML/CSS</span>
-      </div>
-    </div>
-
-    <!-- Contact -->
-    <div class="card shadow-sm border-0 mb-5 text-center" id="contact">
-      <div class="card-header bg-primary text-white fw-bold">
-        <i class="fa-regular fa-id-badge me-2"></i> Contact Information
-      </div>
-      <div class="card-body">
-        <h5 class="card-title mb-3"><strong>Let's connect! <i class="fa-regular fa-face-laugh-wink"></i></strong></h5>
-        <a href="Thirughanamuthuselvan_Resume.pdf" class="btn btn-outline-primary mb-3">View Resume</a>
-        <address class="mb-3">
-          <p><i class="fa-regular fa-envelope me-2"></i>thirughanam31502@gmail.com</p>
-          <p><i class="fa-solid fa-phone me-2"></i>+91 7603921114</p>
-        </address>
-        <a class="btn btn-outline-dark btn-sm me-2" href="https://www.linkedin.com/in/thirughanamuthuselvan-s-981a7a219/">
-          <i class="fa-brands fa-linkedin"></i> LinkedIn
         </a>
-        <a class="btn btn-outline-dark btn-sm" href="https://github.com/Thirughanamuthuselvan/">
-          <i class="fa-brands fa-github"></i> GitHub
-        </a>
-      </div>
-    </div>
-  </main>
 
-  <!-- Footer -->
-  <footer class="bg-light text-center py-3 shadow-sm">
-    <p class="mb-0 text-muted">&copy; 2023 Thirughanamuthuselvan (TMS)</p>
-  </footer>
+
+        <div class="nav-links">
+            <a href="#work">Work</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <a href="Thirughanamuthuselvan_Resume.pdf"
+            class="resume-btn"
+            target="_blank">
+
+            Resume
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+        </a>
+
+    </nav>
+
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <main id="home">
+
+
+        <section class="hero">
+
+
+            <!-- Background decoration -->
+
+            <div class="glow glow-one"></div>
+
+            <div class="glow glow-two"></div>
+
+
+
+            <div class="hero-content">
+
+
+                <div class="availability">
+
+                    <span></span>
+
+                    Software Engineer
+
+                </div>
+
+
+
+                <h1>
+
+                    Building software
+                    <br>
+
+                    <span>with intelligence.</span>
+
+                </h1>
+
+
+
+                <p class="hero-description">
+
+                    I'm Thirughanamuthuselvan, a .NET Software Engineer
+                    building cloud-native applications and AI-powered
+                    experiences using Azure.
+
+                </p>
+
+
+
+                <div class="hero-actions">
+
+
+                    <a href="#work" class="primary-btn">
+
+                        Explore my work
+
+                        <i class="fa-solid fa-arrow-down"></i>
+
+                    </a>
+
+
+                    <a href="#contact" class="text-btn">
+
+                        Let's talk
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+
+                </div>
+
+
+
+                <!-- TECHNOLOGY STRIP -->
+
+                <div class="tech-strip">
+
+                    <span>C#</span>
+
+                    <span>.NET</span>
+
+                    <span>Azure</span>
+
+                    <span>AI</span>
+
+                    <span>RAG</span>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- PROFILE -->
+
+            <div class="hero-visual">
+
+
+                <div class="image-ring"></div>
+
+
+                <img src="Thiru_Photo.jpg"
+                    alt="Thirughanamuthuselvan">
+
+
+                <div class="floating-card">
+
+                    <i class="fa-solid fa-cloud"></i>
+
+                    <div>
+
+                        <strong>Cloud + AI</strong>
+
+                        <small>Software Engineering</small>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =========================
+         SELECTED WORK
+    ========================== -->
+
+    <section id="work" class="work-section">
+
+
+        <div class="section-intro">
+
+            <span>SELECTED WORK</span>
+
+
+            <h2>
+
+                A few things I've
+                <br>
+
+                been building.
+
+            </h2>
+
+
+            <p>
+
+                A selection of projects focused on AI,
+                cloud technologies and scalable software.
+
+            </p>
+
+
+        </div>
+
+
+
+        <div class="projects">
+
+
+
+            <!-- PROJECT 1 -->
+
+            <article class="project project-large">
+
+
+                <div class="project-number">
+
+                    01
+
+                </div>
+
+
+                <div class="project-content">
+
+
+                    <span class="project-category">
+
+                        AI • RAG • AZURE
+
+                    </span>
+
+
+                    <h3>
+
+                        Know Before You Go
+
+                    </h3>
+
+
+                    <p>
+
+                        An AI-powered wayfinding assistant that helps
+                        users discover relevant information through
+                        natural language conversations.
+
+                    </p>
+
+
+                    <div class="project-tags">
+
+                        <span>Azure OpenAI</span>
+
+                        <span>Azure AI Search</span>
+
+                        <span>RAG</span>
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="project-symbol">
+
+                    <i class="fa-solid fa-compass"></i>
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- PROJECT 2 -->
+
+            <article class="project">
+
+
+                <div class="project-number">
+
+                    02
+
+                </div>
+
+
+                <div class="project-content">
+
+
+                    <span class="project-category">
+
+                        CLOUD • EVENTS
+
+                    </span>
+
+
+                    <h3>
+
+                        Event Orchestration Service
+
+                    </h3>
+
+
+                    <p>
+
+                        A scalable system designed to manage
+                        event data and notification workflows.
+
+                    </p>
+
+
+                    <div class="project-tags">
+
+                        <span>.NET</span>
+
+                        <span>Azure</span>
+
+                        <span>Microservices</span>
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="project-symbol">
+
+                    <i class="fa-solid fa-network-wired"></i>
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- PROJECT 3 -->
+
+            <article class="project">
+
+
+                <div class="project-number">
+
+                    03
+
+                </div>
+
+
+                <div class="project-content">
+
+
+                    <span class="project-category">
+
+                        AI • AUTOMATION
+
+                    </span>
+
+
+                    <h3>
+
+                        Intelligent AI Solutions
+
+                    </h3>
+
+
+                    <p>
+
+                        Building AI-powered experiences using
+                        Azure OpenAI and modern conversational
+                        technologies.
+
+                    </p>
+
+
+                    <div class="project-tags">
+
+                        <span>Azure OpenAI</span>
+
+                        <span>Copilot Studio</span>
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="project-symbol">
+
+                    <i class="fa-solid fa-sparkles"></i>
+
+                </div>
+
+
+            </article>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =========================
+         ABOUT
+    ========================== -->
+
+    <section id="about" class="about-section">
+
+
+        <div class="about-label">
+
+            ABOUT
+
+        </div>
+
+
+
+        <div class="about-content">
+
+
+            <h2>
+
+                I enjoy turning
+                <span>complex problems</span>
+                into simple software.
+
+            </h2>
+
+
+
+            <div class="about-text">
+
+
+                <p>
+
+                    I work primarily with .NET and Azure,
+                    building reliable backend systems,
+                    APIs and cloud-native applications.
+
+                </p>
+
+
+                <p>
+
+                    Recently, my focus has expanded into
+                    AI-powered applications — particularly
+                    Azure OpenAI, AI Search and
+                    Retrieval-Augmented Generation.
+
+                </p>
+
+
+                <a href="Thirughanamuthuselvan_Resume.pdf"
+                    target="_blank">
+
+                    More about my experience
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =========================
+         EXPERIENCE
+    ========================== -->
+
+    <section class="experience-section">
+
+
+        <div class="section-small-title">
+
+            EXPERIENCE
+
+        </div>
+
+
+
+        <div class="experience-list">
+
+
+            <div class="experience-row">
+
+
+                <div class="company">
+
+                    Kaar Infotech
+
+                </div>
+
+
+                <div class="role">
+
+                    Software Engineer
+
+                </div>
+
+
+                <div class="year">
+
+                    2024 — Present
+
+                </div>
+
+
+            </div>
+
+
+
+            <div class="experience-row">
+
+
+                <div class="company">
+
+                    Zoho
+
+                </div>
+
+
+                <div class="role">
+
+                    Project Trainee
+
+                </div>
+
+
+                <div class="year">
+
+                    2022 — 2023
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =========================
+         STACK
+    ========================== -->
+
+    <section class="stack-section">
+
+
+        <span>
+
+            TECHNOLOGIES
+
+        </span>
+
+
+        <div class="stack-list">
+
+            <div>C#</div>
+
+            <div>.NET</div>
+
+            <div>ASP.NET Core</div>
+
+            <div>Azure</div>
+
+            <div>Azure OpenAI</div>
+
+            <div>AI Search</div>
+
+            <div>RAG</div>
+
+            <div>SQL</div>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =========================
+         CONTACT
+    ========================== -->
+
+    <section id="contact" class="contact-section">
+
+
+        <span>
+
+            GET IN TOUCH
+
+        </span>
+
+
+        <h2>
+
+            Let's build something
+            <br>
+
+            <span>interesting.</span>
+
+        </h2>
+
+        <a href="mailto:thirughanam31502@gmail.com"
+            class="email">
+
+            thirughanam31502@gmail.com
+
+        </a>
+
+
+
+        <div class="contact-socials">
+
+
+            <a href="https://www.linkedin.com/in/thirughanamuthuselvan-s-981a7a219/"
+                target="_blank">
+
+                LinkedIn
+
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            </a>
+
+
+            <a href="https://github.com/Thirughanamuthuselvan/"
+                target="_blank">
+
+                GitHub
+
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            </a>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+
+        <div>
+
+            © 2026 Thirughanamuthuselvan
+
+        </div>
+
+
+        <div>
+
+            Karur, India
+
+        </div>
+
+
+    </footer>
+
+
 
 </body>
 
